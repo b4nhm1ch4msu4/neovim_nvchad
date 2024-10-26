@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "ayu_dark",
+  theme = "bearded-arc",
 
   -- hl_override = {
   -- 	Comment = { italic = true },
@@ -39,7 +39,7 @@ M.nvdash = {
     { txt = "󰈭  Find Word", keys = "fw", cmd = "Telescope live_grep" },
     { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
     { txt = "  Mappings", keys = "ch", cmd = "NvCheatsheet" },
-    { txt = "󰅗  Quit", keys = "qq", cmd = ":q" },
+    { txt = "󰅗  Quit", keys = "q", cmd = ":q" },
 
     { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
 
@@ -65,7 +65,7 @@ M.ui = {
     theme = "minimal", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
-    separator_style = "round",
+    separator_style = "block",
   },
   cheatsheet = {
     theme = "simple",
