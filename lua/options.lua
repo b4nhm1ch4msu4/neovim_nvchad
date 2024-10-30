@@ -63,6 +63,8 @@ vim.env.PATH = table.concat({ vim.fn.stdpath "data", "mason", "bin" }, sep) .. d
 ----- My options ----------
 ---------------------------
 
+
+opt.scrolloff = 10
 opt.relativenumber = true
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
