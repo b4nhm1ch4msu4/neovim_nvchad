@@ -117,6 +117,15 @@ end, { desc = "whichkey query lookup" })
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
+-- rebind j/k with gj/gk
+map('n', 'j', function()
+  return vim.v.count == 0 and 'gj' or 'j'
+end, { expr = true, noremap = true })
+
+map('n', 'k', function()
+  return vim.v.count == 0 and 'gk' or 'k'
+end, { expr = true, noremap = true })
+
 -- Resize window using <ctrl> arrow keys
 map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
 map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease Window Height" })
