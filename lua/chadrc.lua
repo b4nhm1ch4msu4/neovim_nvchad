@@ -6,17 +6,13 @@
 local M = {}
 
 M.base46 = {
-  theme = "gatekeeper",
+  theme = "ayu_dark",
   transparency = false,
 }
 
 M.nvdash = {
   load_on_startup = true,
   header = {
-    "",
-    "",
-    "",
-    "",
     "",
     " ▄▄▄▄▄▄▄ ▄▄▄ ▄▄▄▄▄▄▄ ▄▄    ▄ ▄▄▄▄▄▄▄ ",
     "█       █   █       █  █  █ █       █",
@@ -25,7 +21,6 @@ M.nvdash = {
     "  █   █ █   █    ▄▄▄█  ▄    █    ▄▄▄█",
     "  █   █ █   █   █▄▄▄█ █ █   █   █    ",
     "  █▄▄▄█ █▄▄▄█▄▄▄▄▄▄▄█▄█  █▄▄█▄▄▄█    ",
-    "",
     "",
     "",
   },
