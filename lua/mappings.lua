@@ -36,5 +36,5 @@ map(
   "n",
   "<leader>ud",
   ":lua vim.diagnostic.enable(not vim.diagnostic.is_enabled())<CR>",
-  { desc = "Toggle Diagnostic" }
+  { desc = "Toggle Diagnostic", silent = true }
 )

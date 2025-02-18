@@ -12,4 +12,14 @@ for _, lsp in ipairs(servers) do
     on_init = nvlsp.on_init,
     capabilities = nvlsp.capabilities,
   }
+
+  if lsp == "clangd" then
+    vim.keymap.set(
+      "n",
+      "<leader>ss",
+      ":ClangdSwitchSourceHeader<CR>",
+      { noremap = true, silent = true, desc = "Toggle source header" }
+    )
+    vim.keymap.set("n", "<leader>;", "A;<Esc>", { noremap = true, silent = true, desc = "Add semicolon" })
+  end
 end
