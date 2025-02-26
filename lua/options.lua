@@ -10,6 +10,7 @@ local g = vim.g
 
 opt.scrolloff = 10
 opt.relativenumber = true
+opt.linebreak = true
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
