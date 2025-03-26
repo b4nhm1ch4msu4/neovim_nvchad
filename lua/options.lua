@@ -8,6 +8,7 @@ local g = vim.g
 ----- My options ----------
 ---------------------------
 
+opt.conceallevel = 1
 opt.scrolloff = 10
 opt.relativenumber = true
 opt.linebreak = true

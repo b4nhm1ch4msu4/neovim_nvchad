@@ -30,6 +30,7 @@ map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move Line Up" })
 map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move Line Down" })
+map({ "n", "v" }, "<leader>sa", "ggVG", { desc = "Select All" })
 
 -- disable diagnostic
 map(

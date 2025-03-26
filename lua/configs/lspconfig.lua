@@ -3,7 +3,7 @@ require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
 
-local servers = { "bashls", "pylsp", "csharp_ls", "clangd", "neocmake" }
+local servers = { "bashls", "pylsp", "csharp_ls", "clangd", "neocmake", "lemminx" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 for _, lsp in ipairs(servers) do
